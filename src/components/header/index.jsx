@@ -23,9 +23,13 @@ const Header = props => {
             try {
                 const response = await client.get(`/${props.username}`);
                 const repos = await client.get(`/${props.username}/repos`);
+                const followers = await client.get(`/${props.username}/followers`);
+                const following = await client.get(`/${props.username}/following`);
  
                 ctx.setUserData(response.data);
                 ctx.setUserRepos(repos.data);
+                ctx.setUserFollowers(followers.data)
+                ctx.setUserFollowing(following.data)
             } catch(err) {
                 console.log(err);
             }
