@@ -14,7 +14,7 @@
 - React-Icons
 - Context API
 
-### 🤖 Link para o deploy e vídeo:
+### 🤖 Link para o deploy:
 
 ##
 
